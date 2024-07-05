@@ -328,7 +328,7 @@ def main(rank, world_size):
 
     # 모델 로드 및 음성 생성
     if rank == 0:
-        example_text = "안녕하세요. 텍스트를 음성으로 변환하는 예제입니다."
+        example_text = "하늘이랑 현빈이 잘 지내지? 하늘이 미국~ 잘 다녀오고 다치지 말고 항상 응원해!"
         output_filename = "synthesized_audio.wav"
         generate_audio(tacotron2_model, vocoder_model, example_text, output_filename)
         # 모델 저장 경로
